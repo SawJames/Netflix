@@ -43,6 +43,13 @@ export const Button = styled.button`
             width: 16px;
         }
     }
+
+    @media (max-width: 1000px){
+        height: 50px;
+        font-size: 16px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
 `;
 
 export const Text = styled.p`
