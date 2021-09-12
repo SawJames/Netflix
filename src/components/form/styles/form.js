@@ -1,0 +1,137 @@
+import styled from 'styled-components/macro'
+import {Link as ReactRouterLink} from 'react-router-dom';
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 660px;
+    background-color: rgba(0,0,0, 0.6);
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    max-width: 450px;
+    padding: 60px 68px 40px;
+    margin-bottom: 100px;
+   
+
+`;
+
+export const Base = styled.form`
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+`;
+
+export const Error = styled.div`
+    background: #e87c03;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 0 16px;
+    color: white;
+    padding: 15px 20px;
+`;
+
+export const Title = styled.h1`
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 28px;
+`;
+
+export const Text = styled.p`
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+`;
+
+export const TextSmall = styled.p`
+    margin-top : 10px;
+    font-size: 13px;
+    line-height: normal;
+    color: #8c8c8c;
+`;
+
+export const Link = styled(ReactRouterLink)`
+    color: #fff;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+`;
+
+export const Input = styled.input`
+    background: #333;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+
+    &:last-of-type{
+        margin-bottom: 30px;
+    }
+`;
+
+export const Submit = styled.button`
+    background: #e50914;
+    border-radius : 4px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    &:disabled{
+        opacity: 0.5;
+    }
+`;
+
+export const CheckboxContainer = styled.div`
+    display: flex;
+    min-height: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+  
+    
+`;
+
+export const CheckboxTextContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+`;
+
+export const Checkbox = styled.input`
+    height: 17px;
+    width: 17px;
+    margin-right: 8px;
+`;
+
+export const CheckboxRemember = styled.p`
+   
+    font-size: 13px;
+   color: white;
+   
+`;
+
+export const CheckboxHelp = styled(ReactRouterLink)`
+    
+    font-size: 13px;
+    margin-right: 5px;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+`;
+
+
