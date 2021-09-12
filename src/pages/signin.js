@@ -38,7 +38,7 @@ export default function SignIn() {
                     <Form.Title>Sign In</Form.Title>
                     {error && <Form.Error>{error}</Form.Error>}
 
-                    <Form.Base onSubmit={handleSignin}>
+                    <Form.Base onSubmit={handleSignin} method="POST">
                         <Form.Input
                             placeholder="Email or phone no"
                             value = {emailAddress}
