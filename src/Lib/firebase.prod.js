@@ -2,6 +2,8 @@ import Firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+// import {seedDatabase} from '../seed';
+
 
 const config = {
     apiKey: "AIzaSyD8DZ2q86hCCe136K_-fKRwFaFAY94BRZY",
@@ -13,5 +15,8 @@ const config = {
   };
 
   const firebase = Firebase.initializeApp(config)
+
+  // seedDatabase(firebase); 
+  // putting all data into the firebase ..just make sure to upload one time and delete it out otherwise it is goining to upload again and again
 
   export {firebase}
