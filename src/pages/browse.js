@@ -1,7 +1,7 @@
 import React from 'react'
 import {UseContent} from '../hooks'
 import { BrowseContainer } from '../containers/browse'
-import selectionFilter  from '../utils/selection-filter'
+import {selectionFilter}  from '../utils';
 
 
 export default function Browse() {
